@@ -29,3 +29,7 @@ docker run --rm \
   -e DPASSWORD=password \
   playdingnow/daily-signin
 ```
+
+### Docker Example Output
+
+![](http://om4h4iqhe.bkt.clouddn.com/daily-signin-docker-output.png)
