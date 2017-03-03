@@ -21,7 +21,9 @@
   },
   "homepage": "https://github.com/yidinghan/daily-signin#readme",
   "dependencies": {
-    "axios": "^0.15.3"
+    "nightmare": "^2.10.0",
+    "request": "^2.79.0",
+    "request-promise": "^4.1.1"
   },
   "devDependencies": {
     "eslint": "^3.16.1",
