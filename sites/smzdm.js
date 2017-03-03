@@ -17,6 +17,10 @@ const ELES = {
   loginIframe: '#J_login_iframe',
   usernameInput: '#username',
   passwordInput: '#password',
+  loginButton: '#login_submit',
+  userInfo: '#index-head > div.J_entry.entry > div.user-wrap > div > div.user-info.J_info',
+  dailySigninButton: '#index-head > div.J_entry.entry > div.old-entry > span > a',
+  oldVersionButton: '#index-head > div.J_entry.entry > div.old-entry > a',
 };
 
 const run = (config) => {
@@ -30,7 +34,12 @@ const run = (config) => {
     .enterIFrame(ELES.loginIframe)
     .wait(ELES.usernameInput)
     .type(ELES.usernameInput, username)
-    .type(ELES.passwordInput, password);
+    .type(ELES.passwordInput, password)
+    .click(ELES.loginButton)
+    .resetFrame()
+    .wait(ELES.userInfo)
+    .wait(1000)
+    .click(ELES.dailySigninButton);
 };
 
 module.exports = {
