@@ -24,7 +24,8 @@ const run = () => {
     .resetFrame()
     .wait(ELES.userInfo)
     .wait(1000)
-    .click(ELES.dailySigninButton);
+    .click(ELES.dailySigninButton)
+    .evaluate(selector => document.querySelector(selector).innerText, ELES.dailySigninButton);
 };
 
 module.exports = {
