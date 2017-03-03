@@ -1,9 +1,9 @@
-const CONFIG = {
-  SITE: process.env.SITE,
-  USERNAME: process.env.USERNAME,
-  PASSWORD: process.env.PASSWORD,
+const config = {
+  site: process.env.SITE,
+  username: process.env.USERNAME,
+  password: process.env.PASSWORD,
 };
 
-const siteOperator = module.require(`./sites/${CONFIG.SITE}`);
+const siteOperator = module.require(`./sites/${config.site}`);
 
-siteOperator();
+siteOperator(config);
