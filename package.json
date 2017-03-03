@@ -22,7 +22,7 @@
   "homepage": "https://github.com/yidinghan/daily-signin#readme",
   "dependencies": {
     "nightmare": "^2.10.0",
-    "nightmare-iframe-manager": "0.0.4",
+    "nightmare-iframe-manager": "0.0.4"
   },
   "devDependencies": {
     "eslint": "^3.16.1",
