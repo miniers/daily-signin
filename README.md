@@ -23,9 +23,9 @@ smzdm, v2ex 每日签到脚本
 ## Docker
 
 ```shell
-docker --rm \
+docker run --rm \
   -e SITE=smzdm \
   -e DUSERNAME=username \
   -e DPASSWORD=password \
-  run playdingnow/daily-signin
+  playdingnow/daily-signin
 ```
