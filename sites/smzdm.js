@@ -1,6 +1,12 @@
 const Nightmare = require('nightmare');
+require('nightmare-iframe-manager')(Nightmare);
 
-const nightmare = Nightmare({ show: true });
+const nightmare = Nightmare({
+  show: true,
+  webPreferences: {
+    webSecurity: false,
+  },
+});
 const URLS = {
   home: 'http://www.smzdm.com',
   login: 'https://zhiyou.smzdm.com/user/login/ajax_check',
@@ -8,6 +14,7 @@ const URLS = {
 
 const ELES = {
   login: '.J_login_trigger',
+  loginIframe: '#J_login_iframe',
   usernameInput: '#username',
   passwordInput: '#password',
 };
@@ -19,6 +26,8 @@ const run = (config) => {
     .goto(URLS.home)
     .wait(ELES.login)
     .click(ELES.login)
+    .wait(ELES.loginIframe)
+    .enterIFrame(ELES.loginIframe)
     .wait(ELES.usernameInput)
     .type(ELES.usernameInput, username)
     .type(ELES.passwordInput, password);
