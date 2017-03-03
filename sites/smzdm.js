@@ -1,30 +1,15 @@
+const config = require('../config');
+
 const Nightmare = require('nightmare');
 require('nightmare-iframe-manager')(Nightmare);
 
-const nightmare = Nightmare({
-  show: true,
-  webPreferences: {
-    webSecurity: false,
-  },
-});
-const URLS = {
-  home: 'http://www.smzdm.com',
-  login: 'https://zhiyou.smzdm.com/user/login/ajax_check',
-};
+const nightmare = Nightmare(config.nightmare);
 
-const ELES = {
-  login: '.J_login_trigger',
-  loginIframe: '#J_login_iframe',
-  usernameInput: '#username',
-  passwordInput: '#password',
-  loginButton: '#login_submit',
-  userInfo: '#index-head > div.J_entry.entry > div.user-wrap > div > div.user-info.J_info',
-  dailySigninButton: '#index-head > div.J_entry.entry > div.old-entry > span > a',
-  oldVersionButton: '#index-head > div.J_entry.entry > div.old-entry > a',
-};
+const URLS = config.sites.smzdm.urls;
+const ELES = config.sites.smzdm.elements;
 
-const run = (config) => {
-  const { username, password } = config;
+const run = () => {
+  const { username, password } = config.profile;
 
   return nightmare
     .goto(URLS.home)
