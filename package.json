@@ -19,5 +19,13 @@
   "bugs": {
     "url": "https://github.com/yidinghan/daily-signin/issues"
   },
-  "homepage": "https://github.com/yidinghan/daily-signin#readme"
+  "homepage": "https://github.com/yidinghan/daily-signin#readme",
+  "dependencies": {
+    "axios": "^0.15.3"
+  },
+  "devDependencies": {
+    "eslint": "^3.16.1",
+    "eslint-config-airbnb-base": "^11.1.0",
+    "eslint-plugin-import": "^2.2.0"
+  }
 }
