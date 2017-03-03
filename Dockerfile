@@ -3,7 +3,7 @@ FROM node:7.6-alpine
 COPY ./package.json /tmp/package.json
 RUN cd /tmp && \
   npm i --production && \
-  npm clean cache
+  npm cache clean
 
 COPY ./ /src-app
 WORKDIR /src-app
