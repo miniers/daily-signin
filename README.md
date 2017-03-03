@@ -8,9 +8,13 @@ smzdm, v2ex 每日签到脚本
 
 ## Enviroment
 
+### 中文
+
  - `SITE`，smzdm or v2ex，默认是 smzdm
  - `DUSERNAME`，对应站点的用户名
  - `DPASSWORD`，对应站点的密码
+
+### EN
 
  - `SITE`, smzdm or v2ex, default is smzdm
  - `DUSERNAME`, username of your account
