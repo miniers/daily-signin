@@ -25,11 +25,15 @@ module.exports = {
       urls: {
         home: 'https://www.v2ex.com/',
         signin: 'https://www.v2ex.com/signin',
-        login: 'https://zhiyou.smzdm.com/user/login/ajax_check',
+        dailyMission: 'https://www.v2ex.com/mission/daily',
       },
       elements: {
         usernameInput: '#Main > div.box > div.cell > form > table > tbody > tr:nth-child(1) > td:nth-child(2) > input',
         passwordInput: '#Main > div.box > div.cell > form > table > tbody > tr:nth-child(2) > td:nth-child(2) > input',
+        loginButton: '#Main > div.box > div.cell > form > table > tbody > tr:nth-child(3) > td:nth-child(2) > input.super.normal.button',
+        gotoDailySignin: '#Rightbar > div:nth-child(4) > div > a',
+        dailySigninButton: '#Main > div.box > div:nth-child(2) > input',
+        dailySigninResult: '#Main > div.box > div:nth-child(4)',
       },
     },
   },

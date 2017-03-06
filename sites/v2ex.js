@@ -14,6 +14,12 @@ const run = () => {
     .wait(ELES.usernameInput)
     .type(ELES.usernameInput, username)
     .type(ELES.passwordInput, password)
+    .click(ELES.loginButton)
+    .wait(ELES.gotoDailySignin)
+    .click(ELES.gotoDailySignin)
+    .wait(ELES.dailySigninButton)
+    .click(ELES.dailySigninButton)
+    .evaluate(selector => document.querySelector(selector).innerText, ELES.dailySigninResult)
     .end();
 };
 
