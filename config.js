@@ -21,6 +21,17 @@ module.exports = {
         oldVersionButton: '#index-head > div.J_entry.entry > div.old-entry > a',
       },
     },
+    v2ex: {
+      urls: {
+        home: 'https://www.v2ex.com/',
+        signin: 'https://www.v2ex.com/signin',
+        login: 'https://zhiyou.smzdm.com/user/login/ajax_check',
+      },
+      elements: {
+        usernameInput: '#Main > div.box > div.cell > form > table > tbody > tr:nth-child(1) > td:nth-child(2) > input',
+        passwordInput: '#Main > div.box > div.cell > form > table > tbody > tr:nth-child(2) > td:nth-child(2) > input',
+      },
+    },
   },
   nightmare: {
     show: process.env.NODE_ENV === 'dev',
