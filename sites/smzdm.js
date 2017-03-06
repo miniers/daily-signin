@@ -26,6 +26,7 @@ const run = () => {
     .click(ELES.dailySigninButton)
     // wait to done
     .wait(1000)
+    // "已签到2天" if success
     .evaluate(selector => document.querySelector(selector).innerText, ELES.dailySigninButton)
     .end();
 };
