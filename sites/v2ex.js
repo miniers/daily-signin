@@ -19,6 +19,7 @@ const run = () => {
     .click(ELES.gotoDailySignin)
     .wait(ELES.dailySigninButton)
     .click(ELES.dailySigninButton)
+    .wait(ELES.dailySigninResult)
     .evaluate(selector => document.querySelector(selector).innerText, ELES.dailySigninResult)
     .end();
 };
