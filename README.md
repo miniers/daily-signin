@@ -1,5 +1,7 @@
 # daily-signin
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/yidinghan/daily-signin.svg)](https://greenkeeper.io/)
+
 smzdm, v2ex daily signin script
 
 smzdm, v2ex 每日签到脚本
