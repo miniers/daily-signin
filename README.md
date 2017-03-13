@@ -27,9 +27,9 @@ smzdm, v2ex, jd 每日签到脚本
 
 ```shell
 docker run --rm \
-  -e SITE=smzdm \
-  -e DUSERNAME=username \
-  -e DPASSWORD=password \
+  -e SITE={{site:smzdm}} \
+  -e DUSERNAME={{username}} \
+  -e DPASSWORD={{password}} \
   playdingnow/daily-signin
 ```
 
