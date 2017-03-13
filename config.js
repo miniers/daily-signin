@@ -5,6 +5,15 @@ module.exports = {
     password: process.env.DPASSWORD,
   },
   sites: {
+    jd: {
+      urls: {
+        home: 'http://vip.jd.com',
+        login: 'https://zhiyou.smzdm.com/user/login/ajax_check',
+      },
+      elements: {
+        login: '.J_login_trigger',
+      },
+    },
     smzdm: {
       urls: {
         home: 'http://www.smzdm.com',
