@@ -33,7 +33,7 @@ module.exports = {
         loginButton: '#Main > div.box > div.cell > form > table > tbody > tr:nth-child(3) > td:nth-child(2) > input.super.normal.button',
         gotoDailySignin: '#Rightbar > div:nth-child(4) > div > a',
         dailySigninButton: '#Main > div.box > div:nth-child(2) > input',
-        dailySigninResult: '#Main > div.box > div:nth-child(4)',
+        dailySigninResult: '#Main > div.box > div.message',
       },
     },
   },
