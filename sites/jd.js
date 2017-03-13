@@ -11,22 +11,17 @@ const run = () => {
 
   return nightmare
     .goto(URLS.home)
-    // .wait(ELES.login)
-    // .click(ELES.login)
-    // .wait(ELES.loginIframe)
-    // .enterIFrame(ELES.loginIframe)
-    // .wait(ELES.usernameInput)
-    // .type(ELES.usernameInput, username)
-    // .type(ELES.passwordInput, password)
-    // .click(ELES.loginButton)
-    // .resetFrame()
-    // .wait(ELES.userInfo)
-    // .wait(1000)
-    // .click(ELES.dailySigninButton)
-    // // wait to done
-    // .wait(1000)
-    // // "已签到2天" if success
-    // .evaluate(selector => document.querySelector(selector).innerText, ELES.dailySigninButton)
+    .wait(ELES.gotoLogin)
+    .click(ELES.gotoLogin)
+    .wait(ELES.usernameLoginButton)
+    .click(ELES.usernameLoginButton)
+    .wait(ELES.usernameInpu)
+    .type(ELES.usernameInput, username)
+    .type(ELES.passwordInput, password)
+    .click(ELES.loginButton)
+    .wait(ELES.jingBean)
+    // "1113" if success
+    .evaluate(selector => document.querySelector(selector).innerText, ELES.jingBean)
     .end();
 };
 

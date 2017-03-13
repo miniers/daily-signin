@@ -11,7 +11,12 @@ module.exports = {
         login: 'https://zhiyou.smzdm.com/user/login/ajax_check',
       },
       elements: {
-        login: '.J_login_trigger',
+        gotoLogin: '#ttbar-login > a.link-login',
+        usernameLoginButton: '#content > div > div.w > div > div.login-tab.login-tab-r > a',
+        usernameInput: '#loginname',
+        passwordInput: '#nloginpwd',
+        loginButton: '#loginsubmit',
+        jingBean: '#userJdNum',
       },
     },
     smzdm: {
