@@ -1,8 +1,8 @@
 # daily-signin
 
-smzdm, v2ex daily signin script
+smzdm, v2ex, jd daily signin script
 
-smzdm, v2ex 每日签到脚本
+smzdm, v2ex, jd 每日签到脚本
 
 # Getting Start
 
@@ -12,9 +12,16 @@ smzdm, v2ex 每日签到脚本
 
 | NAME| CN | EN  |
 | --- | --- | --- |
-| SITE | smzdm or v2ex，默认是 smzdm | smzdm or v2ex, default is smzdm |
+| SITE | 默认是 smzdm，[avaliable sites](#avaliable-sites) | smzdm or v2ex or jd, [avaliable sites](#avaliable-sites) |
 | DUSERNAME | 对应站点的用户名 | username of your account |
 | DPASSWORD | 对应站点的密码 | password of yuur account |
+
+
+## Avaliable Sites
+
+ - [smzdm](https://smzdm.com)
+ - [v2ex](https://v2ex.com)
+ - [jd](https://jd.com)
 
 ## Docker
 
