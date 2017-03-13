@@ -16,7 +16,10 @@ module.exports = {
         usernameInput: '#loginname',
         passwordInput: '#nloginpwd',
         loginButton: '#loginsubmit',
+        // "1113"
         jingBean: '#userJdNum',
+        checkinBtn: '#checkinBtn > i',
+        checkinSuccess: 'body > div.ui-dialog.checkin-dialog.checkin.zoomIn.animated > div.ui-dialog-content > h2',
       },
     },
     smzdm: {

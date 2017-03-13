@@ -19,9 +19,11 @@ const run = () => {
     .type(ELES.usernameInput, username)
     .type(ELES.passwordInput, password)
     .click(ELES.loginButton)
-    .wait(ELES.jingBean)
-    // "1113" if success
-    .evaluate(selector => document.querySelector(selector).innerText, ELES.jingBean)
+    .wait(ELES.checkinBtn)
+    .click(ELES.checkinBtn)
+    .wait(ELES.checkinSuccess)
+    // "签到成功" if success
+    .evaluate(selector => document.querySelector(selector).innerText, ELES.checkinSuccess)
     .end();
 };
 
