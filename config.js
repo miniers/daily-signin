@@ -5,10 +5,25 @@ module.exports = {
     password: process.env.DPASSWORD,
   },
   sites: {
+    jdjr: {
+      urls: {
+        home: 'http://vip.jr.jd.com',
+      },
+      elements: {
+        gotoLogin: '#ttbar-login > a.link-login',
+        usernameLoginButton: '#content > div > div.w > div > div.login-tab.login-tab-r > a',
+        usernameInput: '#loginname',
+        passwordInput: '#nloginpwd',
+        loginButton: '#loginsubmit',
+        // "1113"
+        jingBean: '#userJdNum',
+        checkinBtn: '#checkinBtn > i',
+        checkinSuccess: 'body > div.ui-dialog.checkin-dialog.checkin.zoomIn.animated > div.ui-dialog-content > h2',
+      },
+    },
     jd: {
       urls: {
         home: 'http://vip.jd.com',
-        login: 'https://zhiyou.smzdm.com/user/login/ajax_check',
       },
       elements: {
         gotoLogin: '#ttbar-login > a.link-login',
