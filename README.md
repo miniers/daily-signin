@@ -1,8 +1,8 @@
 # daily-signin
 
-smzdm, v2ex, jd daily signin script
+smzdm, v2ex, jd jr, jd daily signin script
 
-smzdm, v2ex, jd 每日签到脚本
+什么值得买, v2ex, 京东金融, 京东每日签到脚本
 
 # Getting Start
 
@@ -21,7 +21,8 @@ smzdm, v2ex, jd 每日签到脚本
 
  - [smzdm](https://smzdm.com)
  - [v2ex](https://v2ex.com)
- - [jd](https://jd.com)
+ - [jd](https://vip.jd.com)
+ - [jd jr](https://vip.jr.jd.com)
 
 ## Docker
 
