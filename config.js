@@ -10,15 +10,13 @@ module.exports = {
         home: 'http://vip.jr.jd.com',
       },
       elements: {
-        gotoLogin: '#ttbar-login > a.link-login',
+        gotoLogin: '#loginbar > a.link-login',
         usernameLoginButton: '#content > div > div.w > div > div.login-tab.login-tab-r > a',
         usernameInput: '#loginname',
         passwordInput: '#nloginpwd',
         loginButton: '#loginsubmit',
-        // "1113"
-        jingBean: '#userJdNum',
-        checkinBtn: '#checkinBtn > i',
-        checkinSuccess: 'body > div.ui-dialog.checkin-dialog.checkin.zoomIn.animated > div.ui-dialog-content > h2',
+        checkinBtn: '#index-qian-btn',
+        checkinSuccess: 'body > div.mem-sign.bag-popup > div.member-sign > div.sign-center > div > p',
       },
     },
     jd: {

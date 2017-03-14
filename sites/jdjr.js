@@ -19,12 +19,12 @@ const run = () => {
     .type(ELES.usernameInput, username)
     .type(ELES.passwordInput, password)
     .click(ELES.loginButton)
-    // .wait(ELES.checkinBtn)
-    // .click(ELES.checkinBtn)
-    // .wait(ELES.checkinSuccess)
-    // // "签到成功" if success
-    // .evaluate(selector => document.querySelector(selector).innerText, ELES.checkinSuccess)
-    // .end();
+    .wait(ELES.checkinBtn)
+    .click(ELES.checkinBtn)
+    .wait(ELES.checkinSuccess)
+    // "已签到" if success
+    .evaluate(selector => document.querySelector(selector).innerText, ELES.checkinSuccess)
+    .end();
 };
 
 module.exports = {
