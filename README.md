@@ -1,5 +1,7 @@
 # daily-signin
 
+[![Docker Automated buil](https://img.shields.io/docker/automated/playdingnow/daily-signin.svg)](https://hub.docker.com/r/playdingnow/daily-signin/)
+
 smzdm, v2ex, jd jr, jd daily signin script
 
 什么值得买, v2ex, 京东金融, 京东每日签到脚本
