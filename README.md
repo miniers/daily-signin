@@ -24,7 +24,7 @@ smzdm, v2ex, jd jr, jd daily signin script
  - [smzdm](https://smzdm.com)
  - [v2ex](https://v2ex.com)
  - [jd](https://vip.jd.com)
- - [jd jr](https://vip.jr.jd.com)
+ - [jdjr](https://vip.jr.jd.com)
 
 ## Docker
 
