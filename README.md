@@ -1,6 +1,6 @@
 # daily-signin
 
-[![Docker Automated buil](https://img.shields.io/docker/automated/playdingnow/daily-signin.svg)](https://hub.docker.com/r/playdingnow/daily-signin/)
+[![Docker Automated buil](https://img.shields.io/docker/automated/playdingnow/daily-signin.svg?style=flat-square)](https://hub.docker.com/r/playdingnow/daily-signin/)
 
 smzdm, v2ex, jd jr, jd daily signin script
 
