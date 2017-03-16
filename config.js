@@ -71,6 +71,7 @@ module.exports = {
     show: process.env.NODE_ENV === 'dev',
     webPreferences: {
       webSecurity: false,
+      images: false,
     },
   },
 };
