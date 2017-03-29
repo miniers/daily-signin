@@ -14,7 +14,7 @@ const run = (username, password) => {
     .click(ELES.gotoLogin)
     .wait(ELES.usernameLoginButton)
     .click(ELES.usernameLoginButton)
-    .wait(ELES.usernameInpu)
+    .wait(ELES.usernameInput)
     .type(ELES.usernameInput, username)
     .type(ELES.passwordInput, password)
     .click(ELES.loginButton)
