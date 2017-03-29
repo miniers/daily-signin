@@ -7,8 +7,7 @@ const nightmare = Nightmare(config.nightmare);
 
 const { urls: URLS, elements: ELES } = config.sites.smzdm;
 
-const run = () => {
-  const { username, password } = config.profile;
+const run = (username, password) => {
 
   return nightmare
     .goto(URLS.home)

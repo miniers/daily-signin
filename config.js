@@ -1,9 +1,4 @@
 module.exports = {
-  site: process.env.SITE || 'smzdm',
-  profile: {
-    username: process.env.DUSERNAME,
-    password: process.env.DPASSWORD,
-  },
   sites: {
     jdjr: {
       urls: {
