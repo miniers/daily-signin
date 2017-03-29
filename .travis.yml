@@ -5,7 +5,6 @@ node_js:
 before_install:
   - sudo apt-get update
   - sudo apt-get install -y libgtk2.0-0 libgconf-2-4 libasound2 libxtst6 libxss1 libnss3 xvfb
-install: "npm i --production"
 # command to run tests
 script:
   - xvfb-run --server-args="-screen 0 1024x768x24" npm start
